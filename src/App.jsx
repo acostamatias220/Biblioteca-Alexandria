@@ -7,7 +7,7 @@ import Header from './components/layout/Header';
 import Nav from './components/layout/Nav';
 import Footer from './components/layout/Footer';
 import Main from './components/layout/Main';
-import { CartProvider } from './components/context/CartContext'; // ✅ Corrige la ruta si es necesario
+import { CartProvider } from './components/context/CartContext';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/cart" element={<CartPage />} /> {/* ✅ RUTA DEL CARRITO */}
+        <Route path="/cart" element={<CartPage />} /> 
       </Routes>
       <Footer />
     </CartProvider>

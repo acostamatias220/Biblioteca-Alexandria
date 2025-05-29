@@ -3,7 +3,7 @@ import Boton from "./Botones.jsx";
 import '../App.css'
 
 function Tarjeta({ titulo, img, descripcion, botonTexto, botonColor }) {
-  const libro = { titulo, img, descripcion }; // 👈 Armamos el objeto libro
+  const libro = { titulo, img, descripcion };
 
   return (
     <div className="tarjeta">

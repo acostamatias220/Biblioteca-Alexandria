@@ -23,7 +23,7 @@ const CarruselTarjeta = ({ titulo, descripcion, imagenes, libro }) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <h2 className="tarjeta-titulo">{titulo}</h2> {/* 👈 TÍTULO ARRIBA */}
+      <h2 className="tarjeta-titulo">{titulo}</h2>
       <div className="imagen-container">
         {imagenes.map((img, index) => (
           <img
@@ -38,7 +38,7 @@ const CarruselTarjeta = ({ titulo, descripcion, imagenes, libro }) => {
       <Botones libro={{
   titulo,
   descripcion,
-  img: imagenes[indiceActual], // ✅ capturamos solo la imagen visible
+  img: imagenes[indiceActual],
 }} />
     </div>
   );

@@ -8,7 +8,7 @@ const CartPage = () => {
 
   const handlePagar = () => {
     alert('Redirigiendo al proceso de pago...');
-    navigate('/pago'); // Asegúrate de tener esta ruta o puedes cambiarla
+    navigate('/pago');
   };
 
   return (
