@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  height: 400px; /* O puedes poner un alto fijo si deseas */
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+  height: 400px;
+  display: block; /* Elimina espacio en blanco abajo de la imagen */
+}
+
+
+
+.nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(58, 20, 0);
+  font-size: larger;
+
+}
+
+.tarjeta {
+  background-color: rgb(79, 29, 0);
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+.tarjetadiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1020px; /* 3 tarjetas de 300px + gaps */
+  margin: 0 auto; /* Centrar en la página */
+  justify-items: center; /* Centrar el contenido dentro de cada celda */
+}
+
+
+.imagen-container {
+  position: relative;  /* Contenedor para imagen absoluta */
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-img {
+  position: absolute;  /* Solo la imagen se posiciona encima */
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.tarjeta-img.activa {
+  opacity: 1;
+}
+.tarjeta h2, .tarjeta-titulo {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.botones {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+
+.botones{
+  display: inline-block;
+  column-gap: 25px;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin-bottom: 5px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.footer{
+  background-color: rgb(58, 20, 0);
+  color: white;
+  bottom: 0;
+  width: 100%;
+}
+
+.botonesFooter{
+    list-style: none;
+    color: white;
+}
+
