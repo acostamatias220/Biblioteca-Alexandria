@@ -1,6 +1,7 @@
 import React from "react";
 import Boton from "./Botones.jsx";
 import '../App.css'
+import { Link } from 'react-router-dom';
 
 function Tarjeta({ titulo, img, descripcion, botonTexto, botonColor }) {
   const libro = { titulo, img, descripcion };
