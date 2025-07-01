@@ -1,11 +1,11 @@
-import React from 'react'
+import cabezal from '../../assets/cabezal.png';
 
-const Header = () => {
+function Header() {
   return (
-    <header className='header'>
-        <img src="/cabezal.png" alt="logoxd"/>
+    <header className="header">
+      <img src={cabezal} alt="Banner principal" />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
